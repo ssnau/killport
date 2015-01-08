@@ -8,7 +8,7 @@ For example, you want to kill the process listening on port 8080:
 
 ```javascript
 
-var killport = require('./');
+var killport = require('killport');
 
 killport(8080)
 // if success
