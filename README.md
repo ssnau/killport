@@ -10,7 +10,7 @@ For example, you want to kill the process listening on port 8080:
 
 var killport = require('./');
 
-killport(3001)
+killport(8080)
 // if success
 .then(function(out){
   console.log(out);
@@ -25,7 +25,7 @@ killport(3001)
 Support
 ------
 
-Only works on OS with `lsof` command currently.
+Only works on OS with `lsof` command.
 
 License
 -------
