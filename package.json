@@ -1,6 +1,6 @@
 {
   "name": "killport",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a nodejs module to kill any processes base on its port",
   "main": "index.js",
   "scripts": {
