@@ -5,6 +5,7 @@ var notEmpty = function(x) {return x};
 
 module.exports = function killport(port) {
   return (new Promise(function(resolve, reject) {
+    if (!/^\d+$/.test(port)) throw new Error('port must be a number.');
     var cmd = 'lsof -i:' + port; 
     cp.exec(cmd, function(err, stdout, stderr){
       // do not check `err`, if no process found
